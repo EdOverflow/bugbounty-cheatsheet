@@ -55,6 +55,10 @@ http://0177.1/
 http://0x7f.1/
 ```
 
+```
+https://520968996      #Can be calculated using http://www.subnetmask.info/
+```
+
 **Exotic Handlers**
 
 ```
