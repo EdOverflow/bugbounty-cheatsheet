@@ -10,7 +10,8 @@
 **Kona WAF (Akamai) Bypass**
 
 ```js
-\');confirm(1);//```
+\');confirm(1);//
+```
 
 
 **Wordfence XSS Bypasses**
