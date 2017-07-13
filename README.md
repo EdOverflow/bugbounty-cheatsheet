@@ -122,5 +122,5 @@ http://[::]
 ## Content Injection
 
 ```
-:heart: bounty pls
+❤ bounty pls
 ```
