@@ -56,8 +56,10 @@ http://0x7f.1/
 ```
 
 ```
-https://520968996      #Can be calculated using http://www.subnetmask.info/
+https://520968996
 ```
+
+_Note:_ The latter can be calculated using http://www.subnetmask.info/
 
 **Exotic Handlers**
 
