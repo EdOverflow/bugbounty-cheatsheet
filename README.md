@@ -89,6 +89,18 @@ http://[::]
 %0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2e%2e
 ```
 
+# RCE
+
+**Werkzeug Debugger**
+
+Find somewhere where user input can be supplied and submit the following string to cause an error:
+
+```
+strіng
+```
+
+If the target is running their application in debug mode you might be able to run commands. If you are running the target locally, you can probably brute-force the debugger PIN. The debugger PIN is always in the following format: `***-***-***`.
+
 ## Crypto
 
 **MD5 Collision Strings**
