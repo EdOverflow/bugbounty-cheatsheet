@@ -10,3 +10,9 @@
 - [Open Redirect](cheatsheets/open-redirect.md)
 - [Crypto](cheatsheets/crypto.md)
 - [Content Injection](cheatsheets/content-injection.md)
+
+# Contributors
+
+- [EdOverflow](https://github.com/EdOverflow)
+- [GerbenJavado](https://github.com/GerbenJavado)
+- [jon_bottarini](https://github.com/BlueTower)
