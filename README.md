@@ -134,6 +134,28 @@ strіng
 
 If the target is running their application in debug mode you might be able to run commands. If you are running the target locally, you can probably brute-force the debugger PIN. The debugger PIN is always in the following format: `***-***-***`.
 
+## Open Redirect
+
+```
+/google.com
+```
+
+```
+%09/google.com
+```
+
+```
+%5cgoogle.com
+```
+
+```
+//www.google.com/%2f%2e%2e
+```
+
+```
+//www.google.com/%2e%2e
+```
+
 ## Crypto
 
 **MD5 Collision Strings**
