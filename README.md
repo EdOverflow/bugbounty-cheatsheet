@@ -9,6 +9,7 @@
 - [RCE](cheatsheets/rce.md)
 - [Open Redirect](cheatsheets/open-redirect.md)
 - [Crypto](cheatsheets/crypto.md)
+- [Template Injection](cheatsheets/template-injection.md)
 - [Content Injection](cheatsheets/content-injection.md)
 
 # Contributors
