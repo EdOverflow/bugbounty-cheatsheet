@@ -4,7 +4,7 @@
 - [SQLI](cheatsheets/sqli.md)
 - [SSRF](cheatsheets/ssrf.md)
 - [CRLF Injection || HTTP Response Splitting](cheatsheets/crlf.md)
-- [CSV Injection](cheatsheets/csv-injection)
+- [CSV Injection](cheatsheets/csv-injection.md)
 - [LFI](cheatsheets/lfi.md)
 - [RCE](cheatsheets/rce.md)
 - [Open Redirect](cheatsheets/open-redirect.md)
