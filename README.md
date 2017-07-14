@@ -143,15 +143,11 @@ If the target is running their application in debug mode you might be able to ru
 ## Open Redirect
 
 ```
-/google.com
+/%09/google.com
 ```
 
 ```
-%09/google.com
-```
-
-```
-%5cgoogle.com
+/%5cgoogle.com
 ```
 
 ```
