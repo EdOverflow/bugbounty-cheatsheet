@@ -33,3 +33,4 @@ Use the GitHub issue search — check if the issue has already been reported.
 - [EdOverflow](https://github.com/EdOverflow)
 - [GerbenJavado](https://github.com/GerbenJavado)
 - [jon_bottarini](https://github.com/BlueTower)
+- [sp1d3r](https://github.com/sp1d3r)
