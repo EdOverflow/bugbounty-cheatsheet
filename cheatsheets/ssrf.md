@@ -29,3 +29,23 @@ http://[::1]
 ```
 http://[::]
 ```
+
+**Wildcard DNS**
+
+```
+10.0.0.1.xip.io
+www.10.0.0.1.xip.io
+mysite.10.0.0.1.xip.io
+foo.bar.10.0.0.1.xip.io
+```
+_Link:_ xip.io
+
+```
+10.0.0.1.nip.io maps
+app.10.0.0.1.nip.io
+customer1.app.10.0.0.1.nip.io
+customer2.app.10.0.0.1.nip.io
+otherapp.10.0.0.1.nip.io
+```
+
+_Link:_ nip.io
