@@ -38,7 +38,7 @@ www.10.0.0.1.xip.io
 mysite.10.0.0.1.xip.io
 foo.bar.10.0.0.1.xip.io
 ```
-_Link:_ xip.io
+_Link:_ http://xip.io
 
 ```
 10.0.0.1.nip.io maps
@@ -48,4 +48,4 @@ customer2.app.10.0.0.1.nip.io
 otherapp.10.0.0.1.nip.io
 ```
 
-_Link:_ nip.io
+_Link:_ http://nip.io
