@@ -41,7 +41,7 @@ foo.bar.10.0.0.1.xip.io
 _Link:_ http://xip.io
 
 ```
-10.0.0.1.nip.io maps
+10.0.0.1.nip.io
 app.10.0.0.1.nip.io
 customer1.app.10.0.0.1.nip.io
 customer2.app.10.0.0.1.nip.io
