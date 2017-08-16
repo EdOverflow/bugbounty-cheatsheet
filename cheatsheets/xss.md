@@ -102,13 +102,13 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 XSS[JavaScript:alert(1)]
 ```
 
-**Textile** (.textile)
+**Textile** ([.textile](https://txstyle.org/))
 
 ```textile
 "Test link":javascript:alert(1)
 ```
 
-**reStructuredText** (.rst)
+**reStructuredText** ([.rst](http://docutils.sourceforge.net/docs/user/rst/quickref.html))
 
 ```rst
 `Test link`__.
@@ -118,7 +118,7 @@ __ javascript:alert(document.domain)
 
 **AngularJS Template Injection based XSS**
 
-*For quick manual testing, run `angular.version` in your browser console to check a live target*
+*For manual verification on a live target, use `angular.version` in your browser console*
 
 **1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
