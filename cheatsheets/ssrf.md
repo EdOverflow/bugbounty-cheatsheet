@@ -49,3 +49,21 @@ otherapp.10.0.0.1.nip.io
 ```
 
 _Link:_ http://nip.io
+
+**AWS EC2 Metadata**
+
+```
+http://169.254.169.254/latest/meta-data/  
+```
+
+```
+http://169.254.169.254/latest/meta-data/local-hostname
+```
+
+```
+http://169.254.169.254/latest/meta-data/public-hostname
+```
+
+> If there is an IAM role associated with the instance, role-name is the name of the role, and role-name contains the temporary security credentials associated with the role [...]
+
+_Link:_ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html (includes a comprehensive Instance Metadata Categories table)
