@@ -44,3 +44,4 @@ We like to keep our Markdown files as uniform as possible. So if you submit a PR
 - [GerbenJavado](https://github.com/GerbenJavado)
 - [jon_bottarini](https://github.com/BlueTower)
 - [sp1d3r](https://github.com/sp1d3r)
+- [yasinS](https://github.com/yasinS)
