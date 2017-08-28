@@ -34,7 +34,7 @@
 
 **Bcrypt (BSD) Wraparound Bug**
 
-`$2a$` Bcrypt hashes were vulnerable to a wraparound bug where the first string in the list below would ouput the same hash as the next strings.
+`$2a$` Bcrypt hashes were vulnerable to a wraparound bug where the first string in the list below would output the same hash as the next strings.
 
 ```
 000000000000000000000000000000000000000000000000000000000000000000000000
