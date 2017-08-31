@@ -1,6 +1,7 @@
 # Bug Bounty Cheat Sheet
 
 - [Special Tools](cheatsheets/special-tools.md)
+- [Recon](cheatsheets/recon.md)
 - [XSS](cheatsheets/xss.md)
 - [SQLI](cheatsheets/sqli.md)
 - [SSRF](cheatsheets/ssrf.md)
