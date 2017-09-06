@@ -13,5 +13,5 @@ curl https://certspotter.com/api/v0/certs\?domain\=example.com | jq '.[].dns_nam
 This runs [Sublist3r](https://github.com/aboul3la/Sublist3r) on a list of domains and outputs the results in separate files.
 
 ```
-. <(cat domains | awk '{print "sublist3r -d " $1 " -o " $1 ".txt"}')
+. <(cat domains | xargs -n1 -i{} python sublist3r.py -d {} -o {}.txt)
 ```
