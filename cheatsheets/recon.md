@@ -15,3 +15,9 @@ This runs [Sublist3r](https://github.com/aboul3la/Sublist3r) on a list of domain
 ```
 . <(cat domains | xargs -n1 -i{} python sublist3r.py -d {} -o {}.txt)
 ```
+
+# [Apktool](https://ibotpeaches.github.io/Apktool/) to [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+
+```
+apktool d app.apk; cd app;mkdir collection; find . -name \*.smali -exec sh -c "cp {} collection/\$(head /dev/urandom | md5 | cut -d' ' -f1).smali" \;; linkfinder -i 'collection/*.smali' -o cli
+```
