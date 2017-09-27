@@ -8,4 +8,4 @@
 - [BountyFactory](https://bountyfactory.io/)
 - [Intigriti](https://intigriti.be/)
 - [Bugbountyjp](https://bugbounty.jp/)
-- [BountyFactory](https://bountyfactory.io/)
+- [Yogosha](https://www.yogosha.com/)
