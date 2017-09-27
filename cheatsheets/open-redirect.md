@@ -23,3 +23,8 @@
 ```
 //google.com/%2f..
 ```
+
+
+**Open Redirect Payloads** by @cujanovic
+
+https://github.com/cujanovic/Open-Redirect-Payloads
