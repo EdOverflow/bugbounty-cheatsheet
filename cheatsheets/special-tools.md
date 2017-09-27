@@ -31,3 +31,8 @@ otherapp.10.0.0.1.nip.io
 **Reconnaissance**
 
 - https://publicwww.com/ (Source Code Search Engine)
+
+**Report Templates**
+
+- https://github.com/fransr/template-generator
+- https://github.com/ZephrFish/BugBountyTemplates
