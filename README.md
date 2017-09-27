@@ -1,5 +1,6 @@
 # Bug Bounty Cheat Sheet
 
+- [Bug Bounty Platforms](cheatsheets/bugbountyplatforms.md)
 - [Special Tools](cheatsheets/special-tools.md)
 - [Recon](cheatsheets/recon.md)
 - [XSS](cheatsheets/xss.md)
