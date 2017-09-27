@@ -30,7 +30,13 @@ otherapp.10.0.0.1.nip.io
 
 **Reconnaissance**
 
+- https://dnsdumpster.com (DNS and subdomain recon)
+- http://threatcrowd.org (WHOIS, DNS, email, and subdomain recon)
+- https://mxtoolbox.com (wide range of DNS-related recon tools)
 - https://publicwww.com/ (Source Code Search Engine)
+- [VirusTotal](https://virustotal.com/en-gb/domain/google.com/information/) (WHOIS, DNS, and subdomain recon)
+- [crt.sh](https://crt.sh/?q=%25.uber.com) (SSL certificate search)
+- [Google CT](https://transparencyreport.google.com/https/certificates) (SSL certificate transparency search)
 
 **Report Templates**
 
