@@ -10,7 +10,7 @@
 - [CRLF Injection || HTTP Response Splitting](cheatsheets/crlf.md)
 - [CSV Injection](cheatsheets/csv-injection.md)
 - [LFI](cheatsheets/lfi.md)
-- [RCE](cheatsheets/xxe.md)
+- [XXE](cheatsheets/xxe.md)
 - [RCE](cheatsheets/rce.md)
 - [Open Redirect](cheatsheets/open-redirect.md)
 - [Crypto](cheatsheets/crypto.md)
