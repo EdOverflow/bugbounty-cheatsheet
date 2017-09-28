@@ -15,6 +15,7 @@
 - [Crypto](cheatsheets/crypto.md)
 - [Template Injection](cheatsheets/template-injection.md)
 - [Content Injection](cheatsheets/content-injection.md)
+- [XSLT Injection](cheatsheets/xslt.md)
 
 # Contributing
 
@@ -50,3 +51,4 @@ We like to keep our Markdown files as uniform as possible. So if you submit a PR
 - [sp1d3r](https://github.com/sp1d3r)
 - [yasinS](https://github.com/yasinS)
 - [neutrinoguy](https://github.com/neutrinoguy)
+- [kuromatae](https://github.com/kuromatae)
