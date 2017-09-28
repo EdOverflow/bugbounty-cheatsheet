@@ -15,6 +15,7 @@
 - [Crypto](cheatsheets/crypto.md)
 - [Template Injection](cheatsheets/template-injection.md)
 - [Content Injection](cheatsheets/content-injection.md)
+- [XSLT Injection](cheatsheets/xslt.md)
 
 # Contributing
 
