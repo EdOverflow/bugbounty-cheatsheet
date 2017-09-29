@@ -9,3 +9,4 @@
 - [Intigriti](https://intigriti.be/)
 - [Bugbountyjp](https://bugbounty.jp/)
 - [Yogosha](https://www.yogosha.com/)
+- [Zero Day Initiative](http://www.zerodayinitiative.com/)
