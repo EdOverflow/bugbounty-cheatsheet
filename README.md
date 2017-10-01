@@ -4,6 +4,7 @@
 - [Books](cheatsheets/books.md)
 - [Special Tools](cheatsheets/special-tools.md)
 - [Recon](cheatsheets/recon.md)
+- [Practice Platforms](cheatsheets/practice-platforms.md)
 - [XSS](cheatsheets/xss.md)
 - [SQLI](cheatsheets/sqli.md)
 - [SSRF](cheatsheets/ssrf.md)
