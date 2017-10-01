@@ -54,3 +54,4 @@ We like to keep our Markdown files as uniform as possible. So if you submit a PR
 - [yasinS](https://github.com/yasinS)
 - [neutrinoguy](https://github.com/neutrinoguy)
 - [kuromatae](https://github.com/kuromatae)
+- [And many more ...](https://github.com/EdOverflow/bugbounty-cheatsheet/graphs/contributors)
