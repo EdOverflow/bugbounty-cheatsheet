@@ -38,8 +38,8 @@ otherapp.10.0.0.1.nip.io
 - [VirusTotal](https://virustotal.com/en-gb/domain/google.com/information/) (WHOIS, DNS, and subdomain recon)
 - [crt.sh](https://crt.sh/?q=%25.uber.com) (SSL certificate search)
 - [Google CT](https://transparencyreport.google.com/https/certificates) (SSL certificate transparency search)
-- [Wayback Machine](https://archive.org/web/) (Find Intresting stuff hosted on the Domain in past)
-- http://ipv4info.com (Find all domains inside an IP block owned by the Company/Organization)
+- [PenTest Tools](https://pentest-tools.com/information-gathering/google-hacking) (Google dorks)
+
 
 **Report Templates**
 
