@@ -1,6 +1,7 @@
 ## Bug Bounty Platforms
 
-### Open For Signup
+**Open For Signup**
+
 - [HackerOne](https://www.hackerone.com/)
 - [Bugcrowd](https://www.bugcrowd.com/)
 - [BountyFactory](https://bountyfactory.io/)
@@ -8,7 +9,8 @@
 - [Bugbountyjp](https://bugbounty.jp/)
 
 
-### Invite based Platforms
+**Invite based Platforms**
+
 - [Synack](https://www.synack.com/red-team/)
 - [Cobalt](https://cobalt.io/)
 - [Zerocopter](https://zerocopter.com/)
