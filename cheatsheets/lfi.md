@@ -35,3 +35,10 @@ _Steps to reproduce_
 5. Play the uploaded AVI via the target site. If successful, your desired file will be disclosed within the video.
 
 Alternative scripts exist which may generate different HLS formats or lead to the desired file being disclosed in a different manner.
+
+**Blogs**
+* http://pastie.org/840199
+* http://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/
+* http://www.notsosecure.com/folder2/2010/08/20/lfi-code-exec-remote-root/?utm_source=twitterfeed&utm_medium=twitter
+* http://labs.neohapsis.com/2008/07/21/local-file-inclusion-%E2%80%93-tricks-of-the-trade/
+* http://www.digininja.org/blog/when_all_you_can_do_is_read.php
