@@ -40,6 +40,7 @@ otherapp.10.0.0.1.nip.io
 - [Google CT](https://transparencyreport.google.com/https/certificates) (SSL certificate transparency search)
 - [PenTest Tools](https://pentest-tools.com/information-gathering/google-hacking) (Google dorks)
 
+
 **Report Templates**
 
 - https://github.com/fransr/template-generator
