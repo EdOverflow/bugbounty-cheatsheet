@@ -34,11 +34,14 @@ otherapp.10.0.0.1.nip.io
 - http://threatcrowd.org (WHOIS, DNS, email, and subdomain recon)
 - https://mxtoolbox.com (wide range of DNS-related recon tools)
 - https://publicwww.com/ (Source Code Search Engine)
+- http://ipv4info.com/ (Find domains in the IP block owned by a Company/Organization)
 - [HackerTarget Tools](https://hackertarget.com/ip-tools/) (DNS recon, site lookup, and scanning tools)
 - [VirusTotal](https://virustotal.com/en-gb/domain/google.com/information/) (WHOIS, DNS, and subdomain recon)
 - [crt.sh](https://crt.sh/?q=%25.uber.com) (SSL certificate search)
 - [Google CT](https://transparencyreport.google.com/https/certificates) (SSL certificate transparency search)
 - [PenTest Tools](https://pentest-tools.com/information-gathering/google-hacking) (Google dorks)
+- [Wayback Machine](https://archive.org/web/) (Find stuff which was hosted on the domain in past)
+
 
 
 **Report Templates**
