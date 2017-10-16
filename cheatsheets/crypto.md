@@ -52,6 +52,10 @@
 
 In cryptography and computer security, a length extension attack is a type of attack where an attacker can use `Hash(message1)` and the length of message1 to calculate `Hash(message1 ∥ message2)` for an attacker-controlled message2.
 
+TL;DR: given a hash that is composed of a string with an unknown prefix, an attacker can append to the string and produce a new hash that still has the unknown prefix.
+
+An example:
+
 ```
 http://example.com/download?file=report.pdf&mac=563162c9c71a17367d44c165b84b85ab59d036f9
 ```
@@ -63,7 +67,11 @@ http://example.com/download?file=report.pdf%80%00%00%00%00%00%00%00%00%00%00%00%
 
 %00%00%A8/../../../../../../../etc/passwd&mac=ee40aa8ec0cfafb7e2ec4de20943b673968857a5
 ```
+A related H1 report: https://hackerone.com/reports/251572
+
+Tool to extend a hash: https://github.com/iagox86/hash_extender
+
+More details about the attack:
 
 https://www.whitehatsec.com/blog/hash-length-extension-attacks/
-
 https://blog.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks
