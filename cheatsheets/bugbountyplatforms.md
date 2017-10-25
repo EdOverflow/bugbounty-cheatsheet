@@ -15,3 +15,4 @@
 - [Cobalt](https://cobalt.io/)
 - [Zerocopter](https://zerocopter.com/)
 - [Yogosha](https://www.yogosha.com/)
+- [Zero Day Initiative](http://www.zerodayinitiative.com/)
