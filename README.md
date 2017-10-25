@@ -19,6 +19,8 @@
 - [Content Injection](cheatsheets/content-injection.md)
 - [XSLT Injection](cheatsheets/xslt.md)
 
+- [Found some juice ? Confused, how to write a good vulnerability report? Click here](https://support.hackerone.com/hc/en-us/articles/211538803-Step-by-Step-How-to-write-a-good-vulnerability-report)
+
 # Contributing
 
 We welcome contributions from the public.
@@ -54,4 +56,5 @@ We like to keep our Markdown files as uniform as possible. So if you submit a PR
 - [yasinS](https://github.com/yasinS)
 - [neutrinoguy](https://github.com/neutrinoguy)
 - [kuromatae](https://github.com/kuromatae)
+- [Nu!!](https://github.com/Nullsxcurity)
 - [And many more ...](https://github.com/EdOverflow/bugbounty-cheatsheet/graphs/contributors)
