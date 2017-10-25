@@ -28,3 +28,12 @@ apktool d app.apk; cd app;mkdir collection; find . -name \*.smali -exec sh -c "c
 $ echo "aquatone-discover -d $1 && aquatone-scan -d $1 --ports huge && aquatone-takeover -d $1 && aquatone-gather -d $1" >> aqua.sh && chmod +x aqua.sh
 $./aqua.sh domain.com
 ```
+
+# [relative-url-extractor](https://github.com/jobertabma/relative-url-extractor)
+
+```
+$ ruby extract.rb demo-file.js
+$ ruby extract.rb https://hackerone.com/some-file.js
+$ ruby extract.rb '|cat demo-file.js' -c
+
+```
