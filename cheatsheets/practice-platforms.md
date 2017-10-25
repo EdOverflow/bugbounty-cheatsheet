@@ -10,3 +10,5 @@
 - [Google Gruyere](https://google-gruyere.appspot.com/)
 - [OWASP Juice Shop](http://juice-shop.herokuapp.com/)
 - [Hack Yourself First](http://hackyourselffirst.troyhunt.com/)
+- [bWAPP](http://www.itsecgames.com/)
+- [Pentestbox](https://pentestbox.org/)
