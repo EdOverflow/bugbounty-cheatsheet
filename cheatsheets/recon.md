@@ -25,6 +25,6 @@ apktool d app.apk; cd app;mkdir collection; find . -name \*.smali -exec sh -c "c
 # [Aquatone](https://github.com/michenriksen/aquatone/) One-liner
 
 ```
-$"aquatone-discover -d $1 && aquatone-scan -d $1 --ports huge && aquatone-takeover -d $1 && aquatone-gather -d $1" >> aqua.sh
+$ echo "aquatone-discover -d $1 && aquatone-scan -d $1 --ports huge && aquatone-takeover -d $1 && aquatone-gather -d $1" >> aqua.sh && chmod +x aqua.sh
 $./aqua.sh domain.com
 ```
