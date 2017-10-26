@@ -19,7 +19,7 @@ https://520968996
 _Note:_ The latter can be calculated using http://www.subnetmask.info/
 
 
-(**IP-Obfuscator**)[https://github.com/C-REMO/Obscure-IP-Obfuscator]
+[**IP-Obfuscator**](https://github.com/C-REMO/Obscure-IP-Obfuscator)
 Often come handy when backend application is using some sort of black-listing approach to block private address
 
 
