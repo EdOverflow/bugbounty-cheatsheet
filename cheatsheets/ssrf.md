@@ -1,5 +1,8 @@
 ## SSRF
 
+**How to SSRF by Jobert Abma
+https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF
+
 ```
 http://0177.1/
 ```
@@ -13,6 +16,13 @@ https://520968996
 ```
 
 _Note:_ The latter can be calculated using http://www.subnetmask.info/
+
+
+**IP-Obfuscator**
+Often come handy when backend application is using some sort of black-listing approach to block private address
+https://github.com/C-REMO/Obscure-IP-Obfuscator
+
+
 
 **Exotic Handlers**
 
