@@ -3,6 +3,12 @@
 Testing:
 `curl --head -s 'http://example.com/api/v1/secret' -H 'Origin: http://evil.com'`
 
+Some testing conditions: 
+if site: test.example.com
+Origin: testXexample.com
+Origin: test.example.com.np
+Origin: test.xexample.com
+
 Check to see what the server responds with in the `Access-Control-Allow-Origin:` (if anything) and if so, check if `Access-Control-Allow-Credentials: true` is present.
 
 If it is trusting arbitrary origins **with** allow-credentials set to true, then host this HTML as a proof of concept.
