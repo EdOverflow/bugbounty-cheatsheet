@@ -43,4 +43,5 @@ Alternative scripts exist which may generate different HLS formats or lead to th
 * http://labs.neohapsis.com/2008/07/21/local-file-inclusion-%E2%80%93-tricks-of-the-trade/
 * http://www.digininja.org/blog/when_all_you_can_do_is_read.php
 
-(**LFI to RCE**)[https://ibb.co/ntk0mR]
+**LFI to RCE**
+https://ibb.co/ntk0mR
