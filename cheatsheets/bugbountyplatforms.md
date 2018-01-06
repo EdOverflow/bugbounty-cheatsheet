@@ -7,6 +7,7 @@
 - [BountyFactory](https://bountyfactory.io/)
 - [Intigriti](https://intigriti.be/)
 - [Bugbountyjp](https://bugbounty.jp/)
+- [Safehats](https://safehats.com/)
 
 
 **Invite based Platforms**
