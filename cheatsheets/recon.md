@@ -35,5 +35,4 @@ $./aqua.sh domain.com
 $ ruby extract.rb demo-file.js
 $ ruby extract.rb https://hackerone.com/some-file.js
 $ ruby extract.rb '|cat demo-file.js' -c
-
 ```
