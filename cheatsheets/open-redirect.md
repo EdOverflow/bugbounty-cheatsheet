@@ -24,6 +24,14 @@
 //google.com/%2f..
 ```
 
+```
+//\google.com
+```
+
+```
+/\victim.com:80%40google.com
+```
+
 ## Possible open redirect parameters
 
 ```
