@@ -1,12 +1,12 @@
 # Bug Bounty Cheat Sheet</h1>
 
-| Reference                                                   | Vulnerabilities                                           | 
+| 📚 Reference                                                | 🔎 Vulnerabilities                                        | 
 |-------------------------------------------------------------|-----------------------------------------------------------| 
 | - [Bug Bounty Platforms](cheatsheets/bugbountyplatforms.md) | - [XSS](cheatsheets/xss.md)                               | 
 | - [Books](cheatsheets/books.md)                             | - [SQLi](cheatsheets/sqli.md)                             | 
 | - [Special Tools](cheatsheets/special-tools.md)             | - [SSRF](cheatsheets/ssrf.md)                             | 
-| - [Recon](cheatsheets/recon.md)                             | - [CRLF injection](cheatsheets/crlf.md)                   | 
-| - [Practice Platforms](cheatsheets/practice-platforms.md)   | - [CSV injection](cheatsheets/csv-injection.md)           | 
+| - [Recon](cheatsheets/recon.md)                             | - [CRLF Injection](cheatsheets/crlf.md)                   | 
+| - [Practice Platforms](cheatsheets/practice-platforms.md)   | - [CSV Injection](cheatsheets/csv-injection.md)           | 
 |                                                             | - [LFI](cheatsheets/lfi.md)                               | 
 |                                                             | - [XXE](cheatsheets/xxe.md)                               | 
 |                                                             | - [RCE](cheatsheets/rce.md)                               | 
@@ -34,7 +34,7 @@ Use the GitHub issue search — check if the issue has already been reported.
 
 # Style Guide
 
-We like to keep our Markdown files as uniform as possible. So if you submit a PR make sure to follow this style guide (We will not be angry if you do not.)
+We like to keep our Markdown files as uniform as possible. So if you submit a PR, make sure to follow this style guide (we will not be angry if you do not).
 
 - Cheat sheet titles should start with `##`.
 - Subheadings should be made bold. (`**Subheading**`)
