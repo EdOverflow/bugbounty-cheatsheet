@@ -119,7 +119,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 ```
 
 ```md
-[a]:(javascript:alert(1))
+[a]:(javascript:alert(1))           //Add SOH Character
 ```
 
 
