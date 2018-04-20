@@ -29,3 +29,8 @@ Look for *hackathon-related* assets. What I mean by this is sometimes companies 
 **Tip #6**
 
 Keep all your directory brute force results so when a CVE like Drupalgeddon2 comes out, you can look for previously found instances (cat dirsearch/reports/*/* | grep INSTALL.mysql.txt | grep 200 | less)/
+
+
+
+**Tip #7**
+Look for Jira instances and go to /secure/ManageFilters.jspa . Many times you will see product and employee details. It can't be considered an issue in itself but you can get a hint on who is working and what are they working on in that organization.
