@@ -7,7 +7,7 @@
 | [Special Tools](cheatsheets/special-tools.md)               | [SSRF](cheatsheets/ssrf.md)                             | 
 | [Recon](cheatsheets/recon.md)                               | [CRLF Injection](cheatsheets/crlf.md)                   | 
 | [Practice Platforms](cheatsheets/practice-platforms.md)     | [CSV Injection](cheatsheets/csv-injection.md)           | 
-|                                                             | [LFI](cheatsheets/lfi.md)                               | 
+| [Bug Bounty Tips](cheatsheets/bugbountytips.md)             | [LFI](cheatsheets/lfi.md)                               | 
 |                                                             | [XXE](cheatsheets/xxe.md)                               | 
 |                                                             | [RCE](cheatsheets/rce.md)                               | 
 |                                                             | [Open Redirect](cheatsheets/open-redirect.md)           | 
