@@ -41,6 +41,7 @@ otherapp.10.0.0.1.nip.io
 - [Google CT](https://transparencyreport.google.com/https/certificates) (SSL certificate transparency search)
 - [PenTest Tools](https://pentest-tools.com/information-gathering/google-hacking) (Google dorks)
 - [Wayback Machine](https://archive.org/web/) (Find stuff which was hosted on the domain in past)
+- [FindSubdomains](https://findsubdomains.com/) (Find subdomains using domain or keywords)
 
 
 
