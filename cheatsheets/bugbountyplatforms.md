@@ -19,3 +19,4 @@
 - [Yogosha](https://www.yogosha.com/)
 - [Bugbountyzone](https://bugbountyzone.com/)
 - [Antihack.me](http://www.antihack.me/)
+- [Vulnscope](https://https://www.vulnscope.com/)
