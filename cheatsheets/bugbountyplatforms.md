@@ -10,7 +10,8 @@
 - [BugbountyHQ](https://www.bugbountyhq.com/)
 - [Hackerhive](https://hackerhive.io/)
 - [Hackenproof](https://hackenproof.com/)
-
+- [Hacktrophy](https://hacktrophy.com/)
+- [CESPPA](https://www.cesppa.com/)
 
 **Invite based Platforms**
 
