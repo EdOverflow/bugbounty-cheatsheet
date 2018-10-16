@@ -12,3 +12,4 @@
 - [Hack Yourself First](http://hackyourselffirst.troyhunt.com/)
 - [bWAPP](http://www.itsecgames.com/)
 - [Pentestbox](https://pentestbox.org/)
+- [Certified Secure](https://www.certifiedsecure.com/)
