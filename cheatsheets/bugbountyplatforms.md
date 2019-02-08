@@ -4,6 +4,7 @@
 
 - [HackerOne](https://www.hackerone.com/)
 - [Bugcrowd](https://www.bugcrowd.com/)
+- [CESPPA](https://www.cesppa.com/)
 - [BountyFactory](https://bountyfactory.io/)
 - [Intigriti](https://intigriti.be/)
 - [Bugbountyjp](https://bugbounty.jp/)
