@@ -10,7 +10,6 @@
 - [Safehats](https://safehats.com/)
 - [BugbountyHQ](https://www.bugbountyhq.com/)
 - [Hackerhive](https://hackerhive.io/)
-- [Hackenproof](https://hackenproof.com/)
 
 
 **Invite based Platforms**
