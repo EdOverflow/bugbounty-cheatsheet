@@ -30,8 +30,10 @@ otherapp.10.0.0.1.nip.io
 
 **Reconnaissance**
 
+- https://spyse.com (full-fledged recon service: DSN, subdomains, SSL/TLS, AS, Whois, opent ports, etc...)
 - https://dnsdumpster.com (DNS and subdomain recon)
 - [Reverse IP Lookup](http://reverseip.domaintools.com/) (Domainmonitor)
+- [Maltego](https://www.paterva.com/downloads.php)(tool to track down footprints)
 - [Security headers](https://securityheaders.io/) (Security Report, missing headers)
 - http://threatcrowd.org (WHOIS, DNS, email, and subdomain recon)
 - https://mxtoolbox.com (wide range of DNS-related recon tools)
