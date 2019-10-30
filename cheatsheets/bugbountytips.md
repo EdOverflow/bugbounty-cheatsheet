@@ -29,3 +29,10 @@ Look for *hackathon-related* assets. What I mean by this is sometimes companies 
 **Tip #6**
 
 Keep all your directory brute force results so when a CVE like Drupalgeddon2 comes out, you can look for previously found instances (cat dirsearch/reports/*/* | grep INSTALL.mysql.txt | grep 200 | less)/
+
+
+
+**Tip #7**
+
+When you have a form, always try to change the request method from POST to GET in order to improve the CVSS score.
+For example, demonstrating a CSRF can be exploited simply by using \[img\] tag is better than having to send a link to the victim.
