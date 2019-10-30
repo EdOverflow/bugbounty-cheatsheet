@@ -11,3 +11,5 @@
 - [OWASP Juice Shop](http://juice-shop.herokuapp.com/)
 - [Hack Yourself First](http://hackyourselffirst.troyhunt.com/)
 - [flAWS Cloud](http://flaws.cloud/)
+- [bWAPP](http://www.itsecgames.com/)
+- [OWASP Mutillidae] (https://www.owasp.org/index.php/OWASP_Mutillidae_2_Project)

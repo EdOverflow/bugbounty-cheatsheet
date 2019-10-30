@@ -31,6 +31,8 @@ otherapp.10.0.0.1.nip.io
 **Reconnaissance**
 
 - https://dnsdumpster.com (DNS and subdomain recon)
+- [Reverse IP Lookup](http://reverseip.domaintools.com/) (Domainmonitor)
+- [Security headers](https://securityheaders.io/) (Security Report, missing headers)
 - http://threatcrowd.org (WHOIS, DNS, email, and subdomain recon)
 - https://mxtoolbox.com (wide range of DNS-related recon tools)
 - https://publicwww.com/ (Source Code Search Engine)

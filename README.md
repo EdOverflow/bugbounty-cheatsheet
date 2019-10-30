@@ -1,23 +1,20 @@
-# Bug Bounty Cheat Sheet
+# Bug Bounty Cheat Sheet</h1>
 
-- [Bug Bounty Platforms](cheatsheets/bugbountyplatforms.md)
-- [Books](cheatsheets/books.md)
-- [Special Tools](cheatsheets/special-tools.md)
-- [Recon](cheatsheets/recon.md)
-- [Practice Platforms](cheatsheets/practice-platforms.md)
-- [XSS](cheatsheets/xss.md)
-- [SQLI](cheatsheets/sqli.md)
-- [SSRF](cheatsheets/ssrf.md)
-- [CRLF Injection || HTTP Response Splitting](cheatsheets/crlf.md)
-- [CSV Injection](cheatsheets/csv-injection.md)
-- [LFI](cheatsheets/lfi.md)
-- [XXE](cheatsheets/xxe.md)
-- [RCE](cheatsheets/rce.md)
-- [Open Redirect](cheatsheets/open-redirect.md)
-- [Crypto](cheatsheets/crypto.md)
-- [Template Injection](cheatsheets/template-injection.md)
-- [Content Injection](cheatsheets/content-injection.md)
-- [XSLT Injection](cheatsheets/xslt.md)
+| 📚 Reference                                                | 🔎 Vulnerabilities                                        | 
+|-------------------------------------------------------------|-----------------------------------------------------------| 
+| [Bug Bounty Platforms](cheatsheets/bugbountyplatforms.md)   | [XSS](cheatsheets/xss.md)                               | 
+| [Books](cheatsheets/books.md)                               | [SQLi](cheatsheets/sqli.md)                             | 
+| [Special Tools](cheatsheets/special-tools.md)               | [SSRF](cheatsheets/ssrf.md)                             | 
+| [Recon](cheatsheets/recon.md)                               | [CRLF Injection](cheatsheets/crlf.md)                   | 
+| [Practice Platforms](cheatsheets/practice-platforms.md)     | [CSV Injection](cheatsheets/csv-injection.md)           | 
+| [Bug Bounty Tips](cheatsheets/bugbountytips.md)             | [LFI](cheatsheets/lfi.md)                               | 
+|                                                             | [XXE](cheatsheets/xxe.md)                               | 
+|                                                             | [RCE](cheatsheets/rce.md)                               | 
+|                                                             | [Open Redirect](cheatsheets/open-redirect.md)           | 
+|                                                             | [Crypto](cheatsheets/crypto.md)                         | 
+|                                                             | [Template Injection](cheatsheets/template-injection.md) | 
+|                                                             | [Content Injection](cheatsheets/content-injection.md)   | 
+|                                                             | [XSLT Injection](cheatsheets/xslt.md)                   | 
 
 # Contributing
 
@@ -37,7 +34,7 @@ Use the GitHub issue search — check if the issue has already been reported.
 
 # Style Guide
 
-We like to keep our Markdown files as uniform as possible. So if you submit a PR make sure to follow this style guide (We will not be angry if you do not.)
+We like to keep our Markdown files as uniform as possible. So if you submit a PR, make sure to follow this style guide (we will not be angry if you do not).
 
 - Cheat sheet titles should start with `##`.
 - Subheadings should be made bold. (`**Subheading**`)
