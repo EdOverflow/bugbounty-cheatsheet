@@ -4,7 +4,6 @@
 
 - http://dnsbin.zhack.ca (DNS)
 - http://pingb.in (DNS)
-- http://requestb.in (HTTP)
 - https://www.mockbin.org/ (HTTP)
 
 **Wildcard DNS**
