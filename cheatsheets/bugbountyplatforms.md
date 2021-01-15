@@ -2,6 +2,7 @@
 
 **Open For Signup**
 
+- [huntr.dev](https://www.huntr.dev/)
 - [HackerOne](https://www.hackerone.com/)
 - [Bugcrowd](https://www.bugcrowd.com/)
 - [BountyFactory](https://bountyfactory.io/)
