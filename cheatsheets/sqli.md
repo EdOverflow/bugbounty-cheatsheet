@@ -19,7 +19,6 @@ Final example:
 * http://pentestmonkey.net/blog/mssql-sql-injection-cheat-sheet/
 * http://isc.sans.edu/diary.html?storyid=9397
 * http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/
-* http://www.evilsql.com/main/index.php
 * http://xd-blog.com.ar/descargas/manuales/bugs/full-mssql-injection-pwnage.html
 * http://securityoverride.com/articles.php?article_id=1&article=The_Complete_Guide_to_SQL_Injections
 * http://websec.wordpress.com/2010/03/19/exploiting-hard-filtered-sql-injections/
