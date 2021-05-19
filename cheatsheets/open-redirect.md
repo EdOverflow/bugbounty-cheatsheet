@@ -13,7 +13,23 @@
 ```
 
 ```
+%2F%2Fgoogle.com%2F%2F
+```
+
+```
+%25%32%65google.com
+```
+
+```
 //www.google.com/%2e%2e
+```
+
+```
+@%E2%80%AE@google.com 
+```
+
+```
+//;@google.com
 ```
 
 ```
@@ -26,6 +42,22 @@
 
 ```
 //\google.com
+```
+
+```
+hTTp://google.com
+```
+
+```
+hTTp%3a%2f%2f%google.com%2f
+```
+
+```
+HtTp://google.com
+```
+
+```
+//google%00.com
 ```
 
 ```
@@ -156,6 +188,19 @@
 
 ```
 /login?to=///{target}
+```
+
+```
+?target={target}
+```
+
+
+```
+?checkout_url={target}
+```
+
+```
+?dest={target}
 ```
 
 
