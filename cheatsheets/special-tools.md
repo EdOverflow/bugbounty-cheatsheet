@@ -31,6 +31,8 @@ otherapp.10.0.0.1.nip.io
 
 - https://spyse.com (fully-fledged recon service)
 - https://dnsdumpster.com (DNS and subdomain recon)
+- https://urlscan.io/(Domain & IP information,redirects,links,target live sreenshort,lookup)
+- https://securitytrails.com/ (subdomain,DNS records,historical A data)
 - [Reverse IP Lookup](http://reverseip.domaintools.com/) (Domainmonitor)
 - [Security headers](https://securityheaders.io/) (Security Report, missing headers)
 - http://threatcrowd.org (WHOIS, DNS, email, and subdomain recon)
