@@ -29,7 +29,7 @@ otherapp.10.0.0.1.nip.io
 
 **Reconnaissance**
 
--- [RedHunt Labs Attack Surface Recon API](https://devportal.redhuntlabs.com/home) (Domain Intelligence, Subdomain Enumeration, Third-Party SaaS Discovery, Data Leak and Commits Discovery, Intelligent Correlations)
+- [RedHunt Labs Attack Surface Recon API](https://devportal.redhuntlabs.com/home) (Domain Intelligence, Subdomain Enumeration, Third-Party SaaS Discovery, Data Leak and Commits Discovery, Intelligent Correlations)
 - https://spyse.com (fully-fledged recon service)
 - https://dnsdumpster.com (DNS and subdomain recon)
 - [Reverse IP Lookup](http://reverseip.domaintools.com/) (Domainmonitor)
